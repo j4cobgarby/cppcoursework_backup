@@ -1,0 +1,814 @@
+Loading font: 24 point Cornerstone Regular.ttf
+Animated image initialised
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+[update] Current animation 0x555b4ced4a20
+	0
+	0
+theData: 0
+isVisible(): 1 rawImg: 0
+Free font: 24 point Cornerstone Regular.ttf
+Ended normally (output from mydebug() function)

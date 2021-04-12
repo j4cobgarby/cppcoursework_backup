@@ -1,0 +1,332 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/mainfunction.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/mainfunction.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/BaseEngine.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/BaseEngine.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/BouncingBall.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BouncingBall.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BouncingBall.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/BouncingBall.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/BouncingBallMain.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BouncingBallMain.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BouncingBallMain.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/BouncingBallMain.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/DisplayableObject.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/DisplayableObject.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/DraggingDemo.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DraggingDemo.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DraggingDemo.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/DraggingDemo.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/DrawingSurface.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DrawingSurface.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DrawingSurface.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/DrawingSurface.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/FlashingDemo.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/FlashingDemo.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/FlashingDemo.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/FlashingDemo.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/FontManager.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/FontManager.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/FontManager.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/FontManager.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/ImageMappingDemo.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageMappingDemo.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageMappingDemo.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/ImageMappingDemo.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/MazeDemoMain.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MazeDemoMain.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MazeDemoMain.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/MazeDemoMain.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/MazeDemoObject.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MazeDemoObject.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MazeDemoObject.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/MazeDemoObject.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/MazeDemoTileManager.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MazeDemoTileManager.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MazeDemoTileManager.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/MazeDemoTileManager.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/SimpleDemo.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleDemo.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleDemo.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/SimpleDemo.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/SimpleImage.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleImage.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleImage.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/SimpleImage.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/StarfieldDemo.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/StarfieldDemo.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/StarfieldDemo.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/StarfieldDemo.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/TileManager.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/TileManager.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/ZoomingDemo.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ZoomingDemo.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ZoomingDemo.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/ZoomingDemo.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/MyDemoA.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MyDemoA.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MyDemoA.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/MyDemoA.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/SpaceshipObject.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SpaceshipObject.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SpaceshipObject.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/SpaceshipObject.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/Follower.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Follower.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Follower.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/Follower.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/usr/include/SDL2",
+      "-std=c++11",
+      "-std=c++11",
+      "-o",
+      "CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o",
+      "-c",
+      "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MyDemoTileManager.cpp"
+    ],
+    "directory": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build",
+    "file": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MyDemoTileManager.cpp",
+    "output": "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/build/CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o"
+  }
+]
