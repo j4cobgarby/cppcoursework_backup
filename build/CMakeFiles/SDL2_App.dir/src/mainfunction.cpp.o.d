@@ -300,4 +300,5 @@ CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o: \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.hpp \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DisplayableObject.h \
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp

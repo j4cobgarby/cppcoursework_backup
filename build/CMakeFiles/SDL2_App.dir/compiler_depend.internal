@@ -6364,9 +6364,9 @@ CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ExampleFilterPointClasses.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
  /usr/include/SDL2/SDL_keycode.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldGen.hpp
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
 
 CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.cpp
@@ -6745,7 +6745,12 @@ CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ExampleFilterPointClasses.h
  /usr/include/SDL2/SDL_keycode.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/UtilCollisionDetection.h
 
 CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldGen.cpp
@@ -10156,4 +10161,5 @@ CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.hpp
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
 

@@ -285,4 +285,9 @@ CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o: \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../ImageManager.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DisplayableObject.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp \
- /usr/include/SDL2/SDL_keycode.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../TileManager.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../ExampleFilterPointClasses.h \
+ /usr/include/SDL2/SDL_keycode.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../UtilCollisionDetection.h

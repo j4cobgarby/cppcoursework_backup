@@ -37,6 +37,7 @@ Basically do the drawing of the background in here and it'll be copied to the sc
 void ZoomingDemo::virtSetupBackgroundBuffer()
 {
 	fillBackground( 0x000000 );
+	getBackgroundSurface()->drawLine(0, 0, 20, 20, 0xff0000);
 }
 
 

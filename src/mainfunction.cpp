@@ -17,7 +17,7 @@
 #include "Part2/MiningGame.hpp"
 
 // These are passed to initialise to determine the window size
-const int BaseScreenWidth = 1300;
+const int BaseScreenWidth = 1280;
 const int BaseScreenHeight = 800;
 
 

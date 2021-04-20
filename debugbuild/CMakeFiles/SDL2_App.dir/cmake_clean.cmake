@@ -33,6 +33,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SDL2_App.dir/src/Part2/AnimatedImage.cpp.o.d"
   "CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o"
   "CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o.d"
+  "CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o"
+  "CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o.d"
   "CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o"
   "CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o.d"
   "CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o"

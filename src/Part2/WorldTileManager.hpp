@@ -3,6 +3,7 @@
 
 #include "../BaseEngine.h"
 #include "../TileManager.h"
+#include "../DisplayableObject.h"
 
 #include <vector>
 
@@ -21,5 +22,10 @@ public:
 protected:
     std::vector<SimpleImage> *tile_images;
 };
+
+class WorldTilesObject : public DisplayableObject {
+private:
+    
+}
 
 #endif

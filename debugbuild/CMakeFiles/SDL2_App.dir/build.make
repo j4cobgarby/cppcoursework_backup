@@ -433,6 +433,20 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldGen.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.s
 
+CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o: ../src/Part2/Player.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.cpp > CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.s
+
 # Object files for target SDL2_App
 SDL2_App_OBJECTS = \
 "CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o" \
@@ -460,7 +474,8 @@ SDL2_App_OBJECTS = \
 "CMakeFiles/SDL2_App.dir/src/Part2/AnimatedImage.cpp.o" \
 "CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o" \
 "CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o" \
-"CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o"
+"CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o"
 
 # External object files for target SDL2_App
 SDL2_App_EXTERNAL_OBJECTS =
@@ -491,13 +506,14 @@ SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/AnimatedImage.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/build.make
 SDL2_App: /usr/lib/libSDL2main.a
 SDL2_App: /usr/lib/libSDL2.so
 SDL2_App: /usr/lib/libSDL2_ttf.so
 SDL2_App: /usr/lib/libSDL2_image.so
 SDL2_App: CMakeFiles/SDL2_App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking CXX executable SDL2_App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable SDL2_App"
 	/usr/bin/cmake -E copy_directory /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/resources /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2_App.dir/link.txt --verbose=$(VERBOSE)
 

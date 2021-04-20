@@ -25,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MyDemoTileManager.cpp" "CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o.d"
   "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.cpp" "CMakeFiles/SDL2_App.dir/src/Part2/AnimatedImage.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/Part2/AnimatedImage.cpp.o.d"
   "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/MiningGame.cpp" "CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o.d"
+  "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.cpp" "CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o.d"
   "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldGen.cpp" "CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o.d"
   "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.cpp" "CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o.d"
   "/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleDemo.cpp" "CMakeFiles/SDL2_App.dir/src/SimpleDemo.cpp.o" "gcc" "CMakeFiles/SDL2_App.dir/src/SimpleDemo.cpp.o.d"

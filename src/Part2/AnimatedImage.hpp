@@ -10,14 +10,15 @@
 #include <memory>
 #include <vector>
 
-typedef std::shared_ptr<RawImageData> frame_t;
-typedef std::vector<frame_t> animation_t;
+typedef struct {
+    std::shared_ptr<RawImageData> spritesheet;
+    int frame_width;
+    int frame_height;
+    int frame_count;
+    int time_per_frame;
+} animation_t;
 
 class AnimatedImage : public SimpleImage {
-private:
-    int last_update_tick;
-
-    void setImage();
 public:
     AnimatedImage(BaseEngine *eng, int playing=1, int loop=1, float time_per_frame=1, int start_frame = 0);
     ~AnimatedImage();
@@ -27,7 +28,6 @@ public:
     void setFrame(int frame);
     int getFrame();
 
-    void setFrameWidth(int width);
     int getFrameWidth();
 
     void togglePlaying();
@@ -37,21 +37,22 @@ public:
     void setLooping(bool loop);
     bool isLooping();
 
-    void setTimePerFrame(int tpf);
-    int getTimePerFrame();
+    void draw(DrawingSurface *target, int x, int y);
 
     void addAnimation(std::string s, animation_t anim);
     int getAnimationLength(std::string s);
     void setCurrentAnimation(std::string s);
+    std::string getCurrentAnimation();
 protected:
     bool playing;
     bool loop;
     int frame_index;
-    int time_per_frame;
-    int frame_width;
-    animation_t *current_animation;
-    std::map<std::string, animation_t> frame_map;
+    std::map<std::string, animation_t> spritesheets;
+    std::string current_animation;
     BaseEngine *eng;
+    int last_update_tick;
+
+    void setImage();
 };
 
 class AnimatedImageObject : public DisplayableObject {
@@ -74,14 +75,15 @@ public:
 	{
 		if (isVisible() && image.getRawImageData())
 		{
-			image.renderImageWithMask(getEngine()->getForegroundSurface(), image.getFrame(), 0, m_iCurrentScreenX + m_iStartDrawPosX, m_iCurrentScreenY + m_iStartDrawPosY, m_iDrawWidth, m_iDrawHeight);
+            image.draw(getEngine()->getForegroundSurface(), m_iCurrentScreenX + m_iStartDrawPosX, m_iCurrentScreenY + m_iStartDrawPosY);
+			//image.renderImageWithMask(getEngine()->getForegroundSurface(), image.getFrame(), 0, m_iCurrentScreenX + m_iStartDrawPosX, m_iCurrentScreenY + m_iStartDrawPosY, m_iDrawWidth, m_iDrawHeight);
 		}
 	}
 
     virtual void virtDoUpdate(int iCurrentTime) override {
         image.update();
         if (image.getRawImageData() != nullptr) {
-            this->m_iDrawWidth = image.getWidth();
+            this->m_iDrawWidth = image.getFrameWidth();
             this->m_iDrawHeight = image.getHeight();
         }
         redrawDisplay();

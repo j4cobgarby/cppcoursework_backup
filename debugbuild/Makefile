@@ -537,6 +537,30 @@ src/Part2/MiningGame.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.s
 .PHONY : src/Part2/MiningGame.cpp.s
 
+src/Part2/Player.o: src/Part2/Player.cpp.o
+.PHONY : src/Part2/Player.o
+
+# target to build an object file
+src/Part2/Player.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
+.PHONY : src/Part2/Player.cpp.o
+
+src/Part2/Player.i: src/Part2/Player.cpp.i
+.PHONY : src/Part2/Player.i
+
+# target to preprocess a source file
+src/Part2/Player.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.i
+.PHONY : src/Part2/Player.cpp.i
+
+src/Part2/Player.s: src/Part2/Player.cpp.s
+.PHONY : src/Part2/Player.s
+
+# target to generate assembly for a file
+src/Part2/Player.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.s
+.PHONY : src/Part2/Player.cpp.s
+
 src/Part2/WorldGen.o: src/Part2/WorldGen.cpp.o
 .PHONY : src/Part2/WorldGen.o
 
@@ -813,6 +837,9 @@ help:
 	@echo "... src/Part2/MiningGame.o"
 	@echo "... src/Part2/MiningGame.i"
 	@echo "... src/Part2/MiningGame.s"
+	@echo "... src/Part2/Player.o"
+	@echo "... src/Part2/Player.i"
+	@echo "... src/Part2/Player.s"
 	@echo "... src/Part2/WorldGen.o"
 	@echo "... src/Part2/WorldGen.i"
 	@echo "... src/Part2/WorldGen.s"
