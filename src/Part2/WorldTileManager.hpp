@@ -25,7 +25,13 @@ protected:
 
 class WorldTilesObject : public DisplayableObject {
 private:
-    
-}
+public:
+    WorldTilesObject(BaseEngine *eng, std::vector<SimpleImage> *imgs_fg, std::vector<SimpleImage> *imgs_bg);
+
+    WorldTileManager tiles_front;
+    WorldTileManager tiles_back;
+    //virtual void virtDoUpdate(int iCurrentTime) override;
+    virtual void virtDraw() override;
+};
 
 #endif

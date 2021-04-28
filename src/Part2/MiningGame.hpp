@@ -19,10 +19,10 @@ public:
 	virtual void virtDrawStringsOnTop() override;
 	virtual void virtMouseDown(int btn, int x, int y) override;
 	virtual void virtKeyDown(int key) override;
-private:
-	WorldTileManager tiles_back;
-	WorldTileManager tiles_front;
 
+	int getTranslateX() {return filter_translate.getXOffset();}
+	int getTranslateY() {return filter_translate.getYOffset();}
+private:
 	FilterPointsTranslation filter_translate;
 	FilterPointsScaling filter_scale;
 
@@ -31,7 +31,7 @@ private:
 
 	Player *player;
 
-	DrawingSurface *block_surf;
+	WorldTilesObject *tiles;
 };
 
 #endif

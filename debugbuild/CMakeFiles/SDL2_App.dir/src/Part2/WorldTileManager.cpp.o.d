@@ -236,7 +236,7 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o: \
  /usr/include/c++/10.2.0/bits/basic_ios.tcc \
  /usr/include/c++/10.2.0/bits/ostream.tcc /usr/include/c++/10.2.0/istream \
  /usr/include/c++/10.2.0/bits/istream.tcc \
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/MiningGame.hpp \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DisplayableObject.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DrawingSurface.h \
@@ -283,5 +283,10 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o: \
  /usr/include/c++/10.2.0/bits/stl_multimap.h \
  /usr/include/c++/10.2.0/bits/erase_if.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../ImageManager.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DisplayableObject.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../TileManager.h \
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../ExampleFilterPointClasses.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp

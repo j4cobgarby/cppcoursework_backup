@@ -6364,9 +6364,9 @@ CMakeFiles/SDL2_App.dir/src/Part2/MiningGame.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ExampleFilterPointClasses.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
  /usr/include/SDL2/SDL_keycode.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldGen.hpp
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
 
 CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.cpp
@@ -6745,7 +6745,12 @@ CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ExampleFilterPointClasses.h
  /usr/include/SDL2/SDL_keycode.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/UtilCollisionDetection.h
 
 CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldGen.cpp
@@ -7125,6 +7130,7 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
 
 CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.cpp
@@ -7450,7 +7456,7 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o
  /usr/include/c++/10.2.0/bits/ostream.tcc
  /usr/include/c++/10.2.0/istream
  /usr/include/c++/10.2.0/bits/istream.tcc
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/MiningGame.hpp
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DrawingSurface.h
@@ -7501,8 +7507,13 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o
  /usr/include/c++/10.2.0/bits/stl_multimap.h
  /usr/include/c++/10.2.0/bits/erase_if.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageManager.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/TileManager.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/BaseEngine.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ExampleFilterPointClasses.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
 
 CMakeFiles/SDL2_App.dir/src/SimpleDemo.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleDemo.cpp
@@ -10156,4 +10167,5 @@ CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.hpp
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/DisplayableObject.h
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
 

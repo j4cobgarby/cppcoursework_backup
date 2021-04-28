@@ -285,4 +285,5 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o: \
  /usr/include/c++/10.2.0/bits/erase_if.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../ImageManager.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../TileManager.h \
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DisplayableObject.h

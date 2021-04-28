@@ -144,6 +144,7 @@ void Player::virtDoUpdate(int iCurrentTime) {
 
     m_iCurrentScreenX = (int)x_f;
     m_iCurrentScreenY = (int)y_f;
+    //translation->setOffset(-m_iCurrentScreenX, -m_iCurrentScreenY);
 
     AnimatedImageObject::virtDoUpdate(iCurrentTime);
 

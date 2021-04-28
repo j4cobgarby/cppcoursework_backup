@@ -7110,7 +7110,8 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o: ../src/Part2/WorldGen.cpp \
   /usr/include/c++/10.2.0/bits/erase_if.h \
   ../src/ImageManager.h \
   ../src/TileManager.h \
-  ../src/BaseEngine.h
+  ../src/BaseEngine.h \
+  ../src/DisplayableObject.h
 
 CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o: ../src/Part2/WorldTileManager.cpp \
   /usr/include/stdc-predef.h \
@@ -7435,7 +7436,7 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o: ../src/Part2/WorldTile
   /usr/include/c++/10.2.0/bits/ostream.tcc \
   /usr/include/c++/10.2.0/istream \
   /usr/include/c++/10.2.0/bits/istream.tcc \
-  ../src/Part2/WorldTileManager.hpp \
+  ../src/Part2/MiningGame.hpp \
   ../src/BaseEngine.h \
   ../src/DisplayableObject.h \
   ../src/DrawingSurface.h \
@@ -7486,8 +7487,13 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o: ../src/Part2/WorldTile
   /usr/include/c++/10.2.0/bits/stl_multimap.h \
   /usr/include/c++/10.2.0/bits/erase_if.h \
   ../src/ImageManager.h \
+  ../src/Part2/AnimatedImage.hpp \
+  ../src/DisplayableObject.h \
+  ../src/Part2/WorldTileManager.hpp \
   ../src/TileManager.h \
-  ../src/BaseEngine.h
+  ../src/BaseEngine.h \
+  ../src/ExampleFilterPointClasses.h \
+  ../src/Part2/Player.hpp
 
 CMakeFiles/SDL2_App.dir/src/SimpleDemo.cpp.o: ../src/SimpleDemo.cpp \
   /usr/include/stdc-predef.h \
