@@ -4,11 +4,14 @@
 #include "../DisplayableObject.h"
 #include "AnimatedImage.hpp"
 #include "WorldTileManager.hpp"
-#include "../ExampleFilterPointClasses.h" 
+#include "Entity.hpp"
+#include "EventHandler.hpp"
+#include "../ExampleFilterPointClasses.h"
+#include "Inventory.hpp"
 
 #define PLAYER_WALK_SPEED 0.06
 
-class Player : public AnimatedImageObject {
+class Player : public Entity, public EventHandler {
 private:
     int hp;
     int xp;
@@ -16,17 +19,9 @@ private:
     bool facing_right;
     bool on_ground;
 
-    // x and y as floats, for the physics
-    // converted to int when needed to draw
-    float x_f;
-    float y_f;
-
-    float vel_x, vel_y;
-
-    WorldTileManager *tiles_front;
-    WorldTileManager *tiles_back;
-
     FilterPointsTranslation *translation;
+
+    Inventory *inventory;
 public:
     Player(BaseEngine *eng, WorldTileManager *front, WorldTileManager *back, 
         FilterPointsTranslation *translation, float x, float y);
@@ -38,7 +33,12 @@ public:
     virtual void virtDoUpdate(int iCurrentTime) override;
     virtual void virtDraw() override;
 
+    void handleMouseDown(int btn, int x, int y) override;
+    void handleKeyDown(int key) override;
+
     void jump();
+
+    void assignInventory(Inventory *inv) {inventory = inv;}
 };
 
 #endif

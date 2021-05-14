@@ -1,6 +1,9 @@
 #include "../header.h"
 
 #include "AnimatedImage.hpp"
+#include "Entity.hpp"
+#include "Inventory.hpp"
+#include "MiningGame.hpp"
 #include "Player.hpp"
 #include "SDL_keycode.h"
 #include "WorldTileManager.hpp"
@@ -8,13 +11,9 @@
 
 Player::Player(BaseEngine *eng, WorldTileManager *front, WorldTileManager *back,
     FilterPointsTranslation *translation, float x, float y)
-    : AnimatedImageObject(eng, (int)x, (int)y, 1.0f) { 
+    : Entity(eng, x, y, 2, 4, 0, 15, front, back) { 
     this->hp = 100;
     this->xp = 0;
-    this->x_f = x;
-    this->y_f = y;
-    this->vel_x = 0;
-    this->vel_y = 0;
     this->facing_right = true;
     this->tiles_back = back;
     this->tiles_front = front;
@@ -76,7 +75,7 @@ bool Player::try_move(float vx, float vy) {
     for (int r = check_start_y; r <= check_end_y; r++) {
         for (int c = check_start_x; c <= check_end_x; c++) {
             if (tiles_front->getMapValue(c, r) != 0 &&
-                overlaps(new_x+2, new_x+5, new_y, new_y+15, c*8, c*8+8, r*8, r*8+8)) {
+                overlaps(new_x+2, new_x+4, new_y, new_y+15, c*8, c*8+7, r*8, r*8+7)) {
                 can_move = false;
             }
         }
@@ -92,12 +91,6 @@ bool Player::try_move(float vx, float vy) {
 
 void Player::virtDoUpdate(int iCurrentTime) {
     bool moving = false;
-    bool will_hit_x = false;
-    bool will_hit_y = false;
-
-    // std::cout << m_iDrawWidth << ", " << m_iStartDrawPosX << ", " << m_iCurrentScreenX << " | " <<
-    //     getXCentre() << ", " << getYCentre() << " | " <<
-    //     translation->getXOffset() << ", " << translation->getYOffset() << std::endl;
 
     if (getEngine()->isKeyPressed(SDLK_a)) {
         moving = true;
@@ -109,17 +102,7 @@ void Player::virtDoUpdate(int iCurrentTime) {
         vel_x += PLAYER_WALK_SPEED;
         facing_right = true;
         
-    } if (getEngine()->isKeyPressed(SDLK_UP)) {
-        translation->changeOffset(0, -1);
-    } if (getEngine()->isKeyPressed(SDLK_DOWN)) {
-        translation->changeOffset(0, 1);
-    } if (getEngine()->isKeyPressed(SDLK_LEFT)) {
-        translation->changeOffset(-1, 0);
-    } if (getEngine()->isKeyPressed(SDLK_RIGHT)) {
-        translation->changeOffset(1, 0);
     }
-
-    vel_y += 0.13;
 
     std::string current_anim = getImage()->getCurrentAnimation();
 
@@ -131,32 +114,99 @@ void Player::virtDoUpdate(int iCurrentTime) {
         if (!facing_right && current_anim != "idle_left") getImage()->setCurrentAnimation("idle_left");
     }
 
-    vel_x *= 0.93;
-    vel_y *= 0.93;
+    Entity::virtDoUpdate(iCurrentTime);
 
-    if (try_move(vel_x, 0.f)) {
-        vel_x = 0;
-    }
+    int newTransX = -(m_iCurrentScreenX - 8 * 16);
+    newTransX = newTransX < 0 ? newTransX : 0;
+    newTransX = newTransX > -(WORLD_TILES_X*4) + 8 ? newTransX : -(WORLD_TILES_X*4) + 8;
 
-    if (try_move(0.f, vel_y)) {
-        vel_y = 0;
-    } 
+    int newTransY = -(m_iCurrentScreenY - 8 * 10);
+    newTransY = newTransY < 0 ? newTransY : 0;
+    newTransY = newTransY > -(WORLD_TILES_Y*4) + 8 ? newTransY : -(WORLD_TILES_Y*4) + 8;
 
-    m_iCurrentScreenX = (int)x_f;
-    m_iCurrentScreenY = (int)y_f;
-    //translation->setOffset(-m_iCurrentScreenX, -m_iCurrentScreenY);
-
+    translation->setOffset(newTransX, newTransY);
     AnimatedImageObject::virtDoUpdate(iCurrentTime);
-
-    getEngine()->copyAllBackgroundBuffer();
 }
 
 void Player::virtDraw() {
-    AnimatedImageObject::virtDraw();
+    Entity::virtDraw();
+
+    int bx = (getEngine()->getCurrentMouseX() >> 3) << 3;
+    int by = (getEngine()->getCurrentMouseY() >> 3) << 3;
+    int bx_end = bx + 7;
+    int by_end = by + 7;
+
+    if (translation->filterConvertVirtualToRealXPosition(bx) < 0 
+        || translation->filterConvertVirtualToRealXPosition(bx_end) >= getEngine()->getWindowWidth() 
+        || translation->filterConvertVirtualToRealYPosition(by) < 0 
+        || translation->filterConvertVirtualToRealYPosition(by_end) >= getEngine()->getWindowHeight()) return;
+
+    getEngine()->getForegroundSurface()->drawLine(bx, by, bx_end, by, 0xffff00);
+    getEngine()->getForegroundSurface()->drawLine(bx_end, by, bx_end, by_end, 0xffff00);
+    getEngine()->getForegroundSurface()->drawLine(bx_end, by_end, bx, by_end, 0xffff00);
+    getEngine()->getForegroundSurface()->drawLine(bx, by_end, bx, by, 0xffff00);
 }
 
 void Player::jump() {
-    if (on_ground) {
+    //if (on_ground) {
         vel_y -= 4;
+    //}
+}
+
+void Player::handleMouseDown(int btn, int x, int y) {
+    if (getEngine()->isKeyPressed(SDLK_TAB)) {
+        int cell_x = (x + translation->getXOffset()) / CELLSIZE;
+        int cell_y = (y + translation->getYOffset()) / CELLSIZE;
+
+        if (cell_x < 0 || cell_y < 0 ) return;
+
+        if (cell_x < INVENTORY_COLS && cell_y < INVENTORY_ROWS) {
+            int cell_i = cell_y * INVENTORY_COLS + cell_x;
+            inventory->setActiveCell(cell_i);
+            return;
+        }
+    }
+
+    // If the cell selected was not in the inventory, then the user is probably trying to
+    // interact with the world, rather than inventory, so just fall through to here.
+
+    if (btn == 1) {
+        int broken_block = tiles_front->getMapValue(x/8, y/8);
+
+        if (broken_block != 0) {
+            tiles_front->setMapValue(x/8, y/8, 0);
+
+            if (inventory) {
+                inventory->add(broken_block-1);
+            }
+        }
+    }
+
+    if (btn == 3) { // Right click to place block
+        int bx = x/8;
+        int by = y/8;
+
+        if (!overlaps(m_iCurrentScreenX+2, m_iCurrentScreenX+4, m_iCurrentScreenY, m_iCurrentScreenY+15, 
+                bx*8, bx*8+7, by*8, by*8+7)) {
+            if (inventory) {
+                struct inventory_cell_t *active_cell = inventory->getActiveCell();
+
+                if (inventory->item_table[active_cell->item_id].canPlace) {
+                    if (active_cell->count > 0) {
+                        tiles_front->setMapValue(x/8, y/8, 
+                            inventory->item_table[active_cell->item_id].placesBlockId);
+
+                        active_cell->count--;
+                    }
+                }
+            }
+        }
+    }
+}
+
+void Player::handleKeyDown(int key) {
+    getEngine()->copyAllBackgroundBuffer();
+    if (key == SDLK_w) {
+        jump();
     }
 }

@@ -7,31 +7,36 @@
 
 #include <vector>
 
-#define WORLD_TILES_X 512
+#define WORLD_TILES_X 256
 #define WORLD_TILES_Y 64
 
 class WorldTileManager : public TileManager {
 public:
-    WorldTileManager();
-    WorldTileManager(std::vector<SimpleImage> *tile_images);
+    WorldTileManager(std::string tilesheet_path);
 
-    void setTileImages(std::vector<SimpleImage> *tile_images);
+    void setTileshet(std::string tilesheet_path);
     
     virtual void virtDrawTileAt(BaseEngine *eng, DrawingSurface *surf, 
             int x, int y, int sx, int sy) const override;
+
+    char *serialise();
+    void setData(int *dat);
 protected:
-    std::vector<SimpleImage> *tile_images;
+    SimpleImage tilesheet;
 };
 
 class WorldTilesObject : public DisplayableObject {
 private:
 public:
-    WorldTilesObject(BaseEngine *eng, std::vector<SimpleImage> *imgs_fg, std::vector<SimpleImage> *imgs_bg);
+    WorldTilesObject(BaseEngine *eng, std::string tilesheet_path_front, std::string tilesheet_path_back);
 
     WorldTileManager tiles_front;
     WorldTileManager tiles_back;
     //virtual void virtDoUpdate(int iCurrentTime) override;
     virtual void virtDraw() override;
+
+    void saveToFile(std::string filepath);
+    void loadFromFile(std::string filepath);
 };
 
 #endif

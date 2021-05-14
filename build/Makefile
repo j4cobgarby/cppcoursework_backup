@@ -513,6 +513,54 @@ src/Part2/AnimatedImage.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/AnimatedImage.cpp.s
 .PHONY : src/Part2/AnimatedImage.cpp.s
 
+src/Part2/Entity.o: src/Part2/Entity.cpp.o
+.PHONY : src/Part2/Entity.o
+
+# target to build an object file
+src/Part2/Entity.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Entity.cpp.o
+.PHONY : src/Part2/Entity.cpp.o
+
+src/Part2/Entity.i: src/Part2/Entity.cpp.i
+.PHONY : src/Part2/Entity.i
+
+# target to preprocess a source file
+src/Part2/Entity.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Entity.cpp.i
+.PHONY : src/Part2/Entity.cpp.i
+
+src/Part2/Entity.s: src/Part2/Entity.cpp.s
+.PHONY : src/Part2/Entity.s
+
+# target to generate assembly for a file
+src/Part2/Entity.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Entity.cpp.s
+.PHONY : src/Part2/Entity.cpp.s
+
+src/Part2/Inventory.o: src/Part2/Inventory.cpp.o
+.PHONY : src/Part2/Inventory.o
+
+# target to build an object file
+src/Part2/Inventory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.o
+.PHONY : src/Part2/Inventory.cpp.o
+
+src/Part2/Inventory.i: src/Part2/Inventory.cpp.i
+.PHONY : src/Part2/Inventory.i
+
+# target to preprocess a source file
+src/Part2/Inventory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.i
+.PHONY : src/Part2/Inventory.cpp.i
+
+src/Part2/Inventory.s: src/Part2/Inventory.cpp.s
+.PHONY : src/Part2/Inventory.s
+
+# target to generate assembly for a file
+src/Part2/Inventory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.s
+.PHONY : src/Part2/Inventory.cpp.s
+
 src/Part2/MiningGame.o: src/Part2/MiningGame.cpp.o
 .PHONY : src/Part2/MiningGame.o
 
@@ -834,6 +882,12 @@ help:
 	@echo "... src/Part2/AnimatedImage.o"
 	@echo "... src/Part2/AnimatedImage.i"
 	@echo "... src/Part2/AnimatedImage.s"
+	@echo "... src/Part2/Entity.o"
+	@echo "... src/Part2/Entity.i"
+	@echo "... src/Part2/Entity.s"
+	@echo "... src/Part2/Inventory.o"
+	@echo "... src/Part2/Inventory.i"
+	@echo "... src/Part2/Inventory.s"
 	@echo "... src/Part2/MiningGame.o"
 	@echo "... src/Part2/MiningGame.i"
 	@echo "... src/Part2/MiningGame.s"

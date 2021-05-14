@@ -289,4 +289,7 @@ CMakeFiles/SDL2_App.dir/src/Part2/WorldTileManager.cpp.o: \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../TileManager.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../BaseEngine.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../ExampleFilterPointClasses.h \
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Entity.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/EventHandler.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Inventory.hpp

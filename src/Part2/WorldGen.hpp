@@ -23,6 +23,7 @@ class WorldGen {
 public:
     static void generateWorld(int seed, WorldTileManager *front, WorldTileManager *back);
     static float perlin1dFractal(int seed, float x, int octaves, float freq);
+    static int getTerrainTop(WorldTileManager *world, int x);
 private:
     static float perlin1dBasic(int seed, float x);
     static float getScalarAt(int seed, int x);
@@ -31,7 +32,6 @@ private:
     static void placeTree(int seed, WorldTileManager *tiles, int x, int y);
     static void placeLake(int seed, WorldTileManager *foreground, WorldTileManager *background, int x);
 
-    static int getTerrainTop(WorldTileManager *world, int x);
     static pointvector getPointsInOval(int x, int y, int radx, int rady);
 };
 

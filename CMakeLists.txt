@@ -43,6 +43,8 @@ src/Part2/MiningGame.cpp
 src/Part2/WorldTileManager.cpp
 src/Part2/WorldGen.cpp
 src/Part2/Player.cpp
+src/Part2/Entity.cpp
+src/Part2/Inventory.cpp
 )
 
 add_executable(SDL2_App ${SOURCE_FILES})

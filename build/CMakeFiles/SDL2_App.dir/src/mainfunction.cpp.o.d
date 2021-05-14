@@ -301,4 +301,8 @@ CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o: \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/AnimatedImage.hpp \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/../DisplayableObject.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/WorldTileManager.hpp \
- /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Player.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Entity.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/EventHandler.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Inventory.hpp \
+ /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/GameState.hpp
