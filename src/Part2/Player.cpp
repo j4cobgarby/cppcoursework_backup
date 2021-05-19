@@ -2,22 +2,29 @@
 
 #include "AnimatedImage.hpp"
 #include "Entity.hpp"
+#include "ExtraDrawing.hpp"
 #include "Inventory.hpp"
 #include "MiningGame.hpp"
 #include "Player.hpp"
 #include "SDL_keycode.h"
+#include "StateIngame.hpp"
 #include "WorldTileManager.hpp"
 #include "../UtilCollisionDetection.h"
 
 Player::Player(BaseEngine *eng, WorldTileManager *front, WorldTileManager *back,
     FilterPointsTranslation *translation, float x, float y)
     : Entity(eng, x, y, 2, 4, 0, 15, front, back) { 
-    this->hp = 100;
+    this->hp = 20;
+    this->maxhp = 20;
     this->xp = 0;
     this->facing_right = true;
     this->tiles_back = back;
     this->tiles_front = front;
     this->translation = translation;
+    this->editing_front = true;
+
+    healthbarimg = ImageManager::loadImage("healthbar_overlay.png", true);
+    healthbarimg.setTransparencyColour(0x000000);
 
     ImageManager::loadImage("player_run_right.png", true);
     ImageManager::loadImage("player_run_left.png", true);
@@ -96,7 +103,6 @@ void Player::virtDoUpdate(int iCurrentTime) {
         moving = true;
         vel_x -= PLAYER_WALK_SPEED;
         facing_right = false;
-        
     } if (getEngine()->isKeyPressed(SDLK_d)) {
         moving = true;
         vel_x += PLAYER_WALK_SPEED;
@@ -116,11 +122,22 @@ void Player::virtDoUpdate(int iCurrentTime) {
 
     Entity::virtDoUpdate(iCurrentTime);
 
-    int newTransX = -(m_iCurrentScreenX - 8 * 16);
+    int newTransX, newTransY;
+
+    if (getEngine()->isKeyPressed(SDLK_z)) {
+        ((MiningGameEngine *)getEngine())->setZoomLevel(7, 7);
+        newTransX = -(m_iCurrentScreenX - 8 * 10);
+        newTransY = -(m_iCurrentScreenY - 8 * 6);
+    } else {
+        newTransX = -(m_iCurrentScreenX - 8 * 16);
+        newTransY = -(m_iCurrentScreenY - 8 * 10);
+        ((MiningGameEngine *)getEngine())->setZoomLevel(4, 4);
+    }
+
     newTransX = newTransX < 0 ? newTransX : 0;
     newTransX = newTransX > -(WORLD_TILES_X*4) + 8 ? newTransX : -(WORLD_TILES_X*4) + 8;
 
-    int newTransY = -(m_iCurrentScreenY - 8 * 10);
+    
     newTransY = newTransY < 0 ? newTransY : 0;
     newTransY = newTransY > -(WORLD_TILES_Y*4) + 8 ? newTransY : -(WORLD_TILES_Y*4) + 8;
 
@@ -131,26 +148,37 @@ void Player::virtDoUpdate(int iCurrentTime) {
 void Player::virtDraw() {
     Entity::virtDraw();
 
-    int bx = (getEngine()->getCurrentMouseX() >> 3) << 3;
-    int by = (getEngine()->getCurrentMouseY() >> 3) << 3;
-    int bx_end = bx + 7;
-    int by_end = by + 7;
+    if (!getEngine()->isKeyPressed(SDLK_z)) {
+        drawHealthBar();
+    }
 
-    if (translation->filterConvertVirtualToRealXPosition(bx) < 0 
-        || translation->filterConvertVirtualToRealXPosition(bx_end) >= getEngine()->getWindowWidth() 
-        || translation->filterConvertVirtualToRealYPosition(by) < 0 
-        || translation->filterConvertVirtualToRealYPosition(by_end) >= getEngine()->getWindowHeight()) return;
+    if (inventory->getActiveCell()->count > 0 && 
+            inventory->item_table[inventory->getActiveCell()->item_id].canPlace ||
+            inventory->item_table[inventory->getActiveCell()->item_id].breaksDirt) {
+        int bx = (getEngine()->getCurrentMouseX() >> 3) << 3;
+        int by = (getEngine()->getCurrentMouseY() >> 3) << 3;
+        int bx_end = bx + 7;
+        int by_end = by + 7;
 
-    getEngine()->getForegroundSurface()->drawLine(bx, by, bx_end, by, 0xffff00);
-    getEngine()->getForegroundSurface()->drawLine(bx_end, by, bx_end, by_end, 0xffff00);
-    getEngine()->getForegroundSurface()->drawLine(bx_end, by_end, bx, by_end, 0xffff00);
-    getEngine()->getForegroundSurface()->drawLine(bx, by_end, bx, by, 0xffff00);
+        if (reachable(bx, by)) {
+            if (translation->filterConvertVirtualToRealXPosition(bx) < 0 
+                || translation->filterConvertVirtualToRealXPosition(bx_end) >= getEngine()->getWindowWidth() 
+                || translation->filterConvertVirtualToRealYPosition(by) < 0 
+                || translation->filterConvertVirtualToRealYPosition(by_end) >= getEngine()->getWindowHeight()) return;
+
+            if (editing_front) {
+                ExtraDrawing::drawRectangleOutline(getEngine()->getForegroundSurface(), bx, by, bx_end, by_end, 0xffff00);
+            } else {
+                ExtraDrawing::drawDottedRectangle(getEngine()->getForegroundSurface(), bx, by, bx_end, by_end, 0xffff00);
+            }
+        }
+    }
 }
 
 void Player::jump() {
-    //if (on_ground) {
+    if (on_ground) {
         vel_y -= 4;
-    //}
+    }
 }
 
 void Player::handleMouseDown(int btn, int x, int y) {
@@ -170,33 +198,44 @@ void Player::handleMouseDown(int btn, int x, int y) {
     // If the cell selected was not in the inventory, then the user is probably trying to
     // interact with the world, rather than inventory, so just fall through to here.
 
-    if (btn == 1) {
-        int broken_block = tiles_front->getMapValue(x/8, y/8);
+    WorldTileManager *active_tiles = editing_front ? tiles_front : tiles_back;
 
-        if (broken_block != 0) {
-            tiles_front->setMapValue(x/8, y/8, 0);
+    if (reachable(x, y)) {
+        if (btn == 1 && inventory->getActiveCell()->count > 0 && 
+        inventory->item_table[inventory->getActiveCell()->item_id].breaksDirt) {
+            int broken_block = active_tiles->getMapValue(x/8, y/8);
 
-            if (inventory) {
-                inventory->add(broken_block-1);
+            if (broken_block != 0) {
+                active_tiles->setMapValue(x/8, y/8, 0);
+
+                if (inventory) {
+                    inventory->add(broken_block-1);
+                }
             }
         }
-    }
 
-    if (btn == 3) { // Right click to place block
-        int bx = x/8;
-        int by = y/8;
+        if (btn == 1 && inventory->getActiveCell()->count > 0 && 
+        inventory->item_table[inventory->getActiveCell()->item_id].canHit) {
+            ((StateIngame*)((MiningGameEngine*)getEngine())->getCurrentState())
+                ->playerHit(x, y, getXCentre(), getYCentre());
+        }
 
-        if (!overlaps(m_iCurrentScreenX+2, m_iCurrentScreenX+4, m_iCurrentScreenY, m_iCurrentScreenY+15, 
-                bx*8, bx*8+7, by*8, by*8+7)) {
-            if (inventory) {
-                struct inventory_cell_t *active_cell = inventory->getActiveCell();
+        if (btn == 3) { // Right click to place block
+            int bx = x/8;
+            int by = y/8;
 
-                if (inventory->item_table[active_cell->item_id].canPlace) {
-                    if (active_cell->count > 0) {
-                        tiles_front->setMapValue(x/8, y/8, 
-                            inventory->item_table[active_cell->item_id].placesBlockId);
+            if (!overlaps(m_iCurrentScreenX+2, m_iCurrentScreenX+4, m_iCurrentScreenY, m_iCurrentScreenY+15, 
+                    bx*8, bx*8+7, by*8, by*8+7)) {
+                if (inventory) {
+                    struct inventory_cell_t *active_cell = inventory->getActiveCell();
 
-                        active_cell->count--;
+                    if (inventory->item_table[active_cell->item_id].canPlace) {
+                        if (active_cell->count > 0) {
+                            active_tiles->setMapValue(x/8, y/8, 
+                                inventory->item_table[active_cell->item_id].placesBlockId);
+
+                            active_cell->count--;
+                        }
                     }
                 }
             }
@@ -205,8 +244,40 @@ void Player::handleMouseDown(int btn, int x, int y) {
 }
 
 void Player::handleKeyDown(int key) {
-    getEngine()->copyAllBackgroundBuffer();
     if (key == SDLK_w) {
         jump();
     }
+    if (key == SDLK_LCTRL) {
+        editing_front = !editing_front;
+    }
+}
+
+void Player::drawHealthBar() {
+    int startx = - ((MiningGameEngine*)getEngine())->getTranslateX() + INVENTORY_COLS * CELLSIZE + 10;
+    int starty = - ((MiningGameEngine*)getEngine())->getTranslateY();
+    if (startx < 0) startx = 0;
+    if (starty < 0) starty = 0;
+
+    getEngine()->getForegroundSurface()->drawRectangle(startx+2, starty+1, 
+        startx+1+(int)(((float)hp / (float)maxhp) * (float)HEALTHBAR_LENGTH), starty+HEALTHBAR_HEIGHT, 0xff0000);
+    healthbarimg.renderImage(getEngine()->getForegroundSurface(), 
+        0, 0, startx, starty, HEALTHBAR_OVERLAY_LENGTH, HEALTHBAR_OVERLAY_HEIGHT);
+}
+
+void Player::changehp(int deltahp) {
+    hp += deltahp;
+    if (hp <= 0) {
+        std::cout << "Dead." << std::endl;
+        hp = 0;
+    }
+}
+
+bool Player::reachable(int x, int y) {
+    float dx = x+4 - getXCentre();
+    float dy = y+4 - getYCentre();
+    float dist = sqrt(dx*dx + dy*dy);
+    return dist <= 40.f;
+}
+
+bool Player::checkOnGround() {
 }

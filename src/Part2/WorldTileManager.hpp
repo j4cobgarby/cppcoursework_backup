@@ -35,8 +35,8 @@ public:
     //virtual void virtDoUpdate(int iCurrentTime) override;
     virtual void virtDraw() override;
 
-    void saveToFile(std::string filepath);
-    void loadFromFile(std::string filepath);
+    bool saveToFile(std::string filepath);
+    bool loadFromFile(std::string filepath);
 };
 
 #endif

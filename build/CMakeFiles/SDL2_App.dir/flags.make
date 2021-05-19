@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/usr/include/SDL2
 
-CXX_FLAGS =   -std=c++11 -std=c++11
+CXX_FLAGS =   -std=c++17 -std=c++17
 

@@ -10,35 +10,6 @@
 
 #define CELLSIZE        13
 
-class Item {
-public:
-    Item(std::string icnpath, int icon_number, bool canHit, bool canPlace,
-        bool breaksWood=false, bool breaksStone=false, bool breaksDirt=false, int goodBlockEfficiency=1, int badBlockEfficiency=1, 
-        int placesBlockId=0, int hitDmg=1, int stack_size=64);
-
-    // The image representing the icon (or a tilesheet containing the icon)
-    SimpleImage icon;
-
-    // Values to handle tilesheets
-    int icon_startx;
-
-    int stack_size;
-    int amount;
-
-    bool canHit; // can it hit living things
-    int hitDmg; // How much damage the item does to living things when hit with it
-
-    bool canPlace; // if the item can be placed down in the world
-    int placesBlockId; // the id of the block it places, if it canPlace
-
-    bool breaksWood;
-    bool breaksStone;
-    bool breaksDirt;
-
-    int goodBlockEfficiency; // how much damage it does to a block per hit which it is good at breaking
-    int badBlockEfficiency; // how much damage per hit to a block that it isn't good at breaking
-};
-
 struct item_t {
     // Where the tile begins in the tilesheet (x)
     int icon_startx;
@@ -64,10 +35,6 @@ struct inventory_cell_t {
     int count;
 };
 
-class ItemBlockDirt : public Item {public: ItemBlockDirt() : Item("block.png", 0, false, true) {placesBlockId=1;}};
-class ItemBlockGrassDirt : public Item {public: ItemBlockGrassDirt() : Item("block.png", 1, false, true) {placesBlockId=2;}};
-class ItemBlockStone : public Item {public: ItemBlockStone() : Item("block.png", 2, false, true) {placesBlockId=3;}};
-
 class Inventory : public DisplayableObject {
 private:
 
@@ -88,6 +55,11 @@ public:
         {32,64, false,0,    true,5,     false,false,false,  0,0}, // Leaf
         {40,64, false,0,    true,6,     false,false,false,  0,0}, // Water
         {48,64, false,0,    true,7,     false,false,false,  0,0}, // Sand
+
+        {}, // Bow
+        {}, // Arrow
+        {72,1,  false,0,    false,0,    true,true,true,     1,1}, // Pickaxe
+        {80,1,  true,1,     false,0,    false,false,false,  0,0}, // Sword
     };
 
     Inventory(BaseEngine *eng);
@@ -120,6 +92,9 @@ public:
     struct inventory_cell_t *getActiveCell() {return &(items[active_cell]);}
 
     void virtDraw() override;
+
+    void loadFromFile();
+    void saveToFile();
 };
 
 #endif

@@ -12,21 +12,9 @@
 #include "Inventory.hpp"
 #include <map>
 
-class GameState : public DisplayableObjectContainer {
-	GameState(BaseEngine* eng);
+class GameState;
 
-	void onChangeTo() {}
-
-	DisplayableObject *getObject(int i);
-	int getObjectsCount();
-
-    virtual void virtMainLoopStartIteration() {}
-
-	virtual void virtMainLoopPreUpdate() {}
-	virtual void virtMainLoopDoBeforeUpdate() {}
-	virtual void virtMainLoopDoAfterUpdate() {}
-	virtual void virtMainLoopPostUpdate() {}
-};
+class StateIngame;
 
 class MiningGameEngine : public BaseEngine {
 public:
@@ -50,23 +38,19 @@ public:
 	FilterPointsTranslation *getTranslation() {return &filter_translate;}
 
 	void setFilterEnabled(bool enabled);
+	void setZoomLevel(float x, float y);
 
 	void changeState(std::string state_name);
+	GameState *getCurrentState() {return current_state;}
 private:
 	GameState *current_state;
-	std::map<std::string, GameState> states;
+	std::map<std::string, GameState *> states;
 
 	FilterPointsTranslation filter_translate;
 	FilterPointsScaling filter_scale;
 
 	std::vector<EventHandler *> event_handlers;
 
-	Player *player;
-	Inventory *player_inv;
-
-	WorldTilesObject *tiles;
-
-	int seed;
 	float bg_offset;
 };
 

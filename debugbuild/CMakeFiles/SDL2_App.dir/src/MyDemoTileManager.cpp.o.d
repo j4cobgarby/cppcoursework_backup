@@ -36,13 +36,14 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \
  /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
- /usr/include/stdlib.h /usr/include/bits/waitflags.h \
- /usr/include/bits/waitstatus.h /usr/include/bits/types/locale_t.h \
- /usr/include/bits/types/__locale_t.h /usr/include/alloca.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/10.2.0/bits/std_abs.h \
- /usr/include/string.h /usr/include/strings.h /usr/include/wchar.h \
- /usr/include/bits/wchar.h /usr/include/bits/types/wint_t.h \
- /usr/include/bits/types/mbstate_t.h /usr/include/inttypes.h \
+ /usr/include/c++/10.2.0/pstl/pstl_config.h /usr/include/stdlib.h \
+ /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
+ /usr/include/bits/types/locale_t.h /usr/include/bits/types/__locale_t.h \
+ /usr/include/alloca.h /usr/include/bits/stdlib-float.h \
+ /usr/include/c++/10.2.0/bits/std_abs.h /usr/include/string.h \
+ /usr/include/strings.h /usr/include/wchar.h /usr/include/bits/wchar.h \
+ /usr/include/bits/types/wint_t.h /usr/include/bits/types/mbstate_t.h \
+ /usr/include/inttypes.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include/stdint.h \
  /usr/include/stdint.h /usr/include/bits/stdint-uintn.h \
  /usr/include/ctype.h /usr/include/c++/10.2.0/math.h \
@@ -54,12 +55,38 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
  /usr/include/bits/mathcalls.h /usr/include/bits/mathcalls-narrow.h \
- /usr/include/bits/iscanonical.h /usr/include/SDL2/SDL_assert.h \
- /usr/include/SDL2/SDL_atomic.h /usr/include/SDL2/SDL_audio.h \
- /usr/include/SDL2/SDL_error.h /usr/include/SDL2/SDL_endian.h \
- /usr/include/SDL2/SDL_mutex.h /usr/include/SDL2/SDL_thread.h \
- /usr/include/SDL2/SDL_rwops.h /usr/include/SDL2/SDL_clipboard.h \
- /usr/include/SDL2/SDL_cpuinfo.h \
+ /usr/include/bits/iscanonical.h /usr/include/c++/10.2.0/bits/specfun.h \
+ /usr/include/c++/10.2.0/bits/stl_algobase.h \
+ /usr/include/c++/10.2.0/bits/functexcept.h \
+ /usr/include/c++/10.2.0/bits/exception_defines.h \
+ /usr/include/c++/10.2.0/ext/numeric_traits.h \
+ /usr/include/c++/10.2.0/bits/stl_pair.h \
+ /usr/include/c++/10.2.0/bits/move.h /usr/include/c++/10.2.0/type_traits \
+ /usr/include/c++/10.2.0/bits/stl_iterator_base_types.h \
+ /usr/include/c++/10.2.0/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/10.2.0/bits/concept_check.h \
+ /usr/include/c++/10.2.0/debug/assertions.h \
+ /usr/include/c++/10.2.0/bits/stl_iterator.h \
+ /usr/include/c++/10.2.0/bits/ptr_traits.h \
+ /usr/include/c++/10.2.0/debug/debug.h \
+ /usr/include/c++/10.2.0/bits/predefined_ops.h \
+ /usr/include/c++/10.2.0/limits /usr/include/c++/10.2.0/tr1/gamma.tcc \
+ /usr/include/c++/10.2.0/tr1/special_function_util.h \
+ /usr/include/c++/10.2.0/tr1/bessel_function.tcc \
+ /usr/include/c++/10.2.0/tr1/beta_function.tcc \
+ /usr/include/c++/10.2.0/tr1/ell_integral.tcc \
+ /usr/include/c++/10.2.0/tr1/exp_integral.tcc \
+ /usr/include/c++/10.2.0/tr1/hypergeometric.tcc \
+ /usr/include/c++/10.2.0/tr1/legendre_function.tcc \
+ /usr/include/c++/10.2.0/tr1/modified_bessel_func.tcc \
+ /usr/include/c++/10.2.0/tr1/poly_hermite.tcc \
+ /usr/include/c++/10.2.0/tr1/poly_laguerre.tcc \
+ /usr/include/c++/10.2.0/tr1/riemann_zeta.tcc \
+ /usr/include/SDL2/SDL_assert.h /usr/include/SDL2/SDL_atomic.h \
+ /usr/include/SDL2/SDL_audio.h /usr/include/SDL2/SDL_error.h \
+ /usr/include/SDL2/SDL_endian.h /usr/include/SDL2/SDL_mutex.h \
+ /usr/include/SDL2/SDL_thread.h /usr/include/SDL2/SDL_rwops.h \
+ /usr/include/SDL2/SDL_clipboard.h /usr/include/SDL2/SDL_cpuinfo.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include/immintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include/mmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/10.2.0/include/xmmintrin.h \
@@ -159,25 +186,11 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/c++/10.2.0/exception \
  /usr/include/c++/10.2.0/bits/exception.h \
  /usr/include/c++/10.2.0/bits/exception_ptr.h \
- /usr/include/c++/10.2.0/bits/exception_defines.h \
  /usr/include/c++/10.2.0/bits/cxxabi_init_exception.h \
  /usr/include/c++/10.2.0/typeinfo \
  /usr/include/c++/10.2.0/bits/hash_bytes.h /usr/include/c++/10.2.0/new \
  /usr/include/c++/10.2.0/bits/nested_exception.h \
- /usr/include/c++/10.2.0/bits/move.h /usr/include/c++/10.2.0/type_traits \
  /usr/include/c++/10.2.0/bits/char_traits.h \
- /usr/include/c++/10.2.0/bits/stl_algobase.h \
- /usr/include/c++/10.2.0/bits/functexcept.h \
- /usr/include/c++/10.2.0/ext/numeric_traits.h \
- /usr/include/c++/10.2.0/bits/stl_pair.h \
- /usr/include/c++/10.2.0/bits/stl_iterator_base_types.h \
- /usr/include/c++/10.2.0/bits/stl_iterator_base_funcs.h \
- /usr/include/c++/10.2.0/bits/concept_check.h \
- /usr/include/c++/10.2.0/debug/assertions.h \
- /usr/include/c++/10.2.0/bits/stl_iterator.h \
- /usr/include/c++/10.2.0/bits/ptr_traits.h \
- /usr/include/c++/10.2.0/debug/debug.h \
- /usr/include/c++/10.2.0/bits/predefined_ops.h \
  /usr/include/c++/10.2.0/cstdint /usr/include/c++/10.2.0/bits/localefwd.h \
  /usr/include/c++/10.2.0/x86_64-pc-linux-gnu/bits/c++locale.h \
  /usr/include/c++/10.2.0/clocale /usr/include/locale.h \
@@ -211,6 +224,9 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/c++/10.2.0/ext/alloc_traits.h \
  /usr/include/c++/10.2.0/bits/alloc_traits.h \
  /usr/include/c++/10.2.0/bits/stl_construct.h \
+ /usr/include/c++/10.2.0/string_view \
+ /usr/include/c++/10.2.0/bits/functional_hash.h \
+ /usr/include/c++/10.2.0/bits/string_view.tcc \
  /usr/include/c++/10.2.0/ext/string_conversions.h \
  /usr/include/c++/10.2.0/cstdio /usr/include/c++/10.2.0/cerrno \
  /usr/include/errno.h /usr/include/bits/errno.h \
@@ -218,7 +234,6 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
  /usr/include/bits/types/error_t.h \
  /usr/include/c++/10.2.0/bits/charconv.h \
- /usr/include/c++/10.2.0/bits/functional_hash.h \
  /usr/include/c++/10.2.0/bits/basic_string.tcc \
  /usr/include/c++/10.2.0/bits/locale_classes.tcc \
  /usr/include/c++/10.2.0/system_error \
@@ -256,12 +271,23 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/c++/10.2.0/bits/stl_heap.h \
  /usr/include/c++/10.2.0/bits/stl_tempbuf.h \
  /usr/include/c++/10.2.0/bits/uniform_int_dist.h \
- /usr/include/c++/10.2.0/limits /usr/include/c++/10.2.0/functional \
- /usr/include/c++/10.2.0/tuple /usr/include/c++/10.2.0/array \
+ /usr/include/c++/10.2.0/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/10.2.0/functional /usr/include/c++/10.2.0/tuple \
+ /usr/include/c++/10.2.0/array \
  /usr/include/c++/10.2.0/bits/uses_allocator.h \
  /usr/include/c++/10.2.0/bits/invoke.h \
  /usr/include/c++/10.2.0/bits/refwrap.h \
  /usr/include/c++/10.2.0/bits/std_function.h \
+ /usr/include/c++/10.2.0/unordered_map \
+ /usr/include/c++/10.2.0/ext/aligned_buffer.h \
+ /usr/include/c++/10.2.0/bits/hashtable.h \
+ /usr/include/c++/10.2.0/bits/hashtable_policy.h \
+ /usr/include/c++/10.2.0/bits/node_handle.h \
+ /usr/include/c++/10.2.0/optional \
+ /usr/include/c++/10.2.0/bits/enable_special_members.h \
+ /usr/include/c++/10.2.0/bits/unordered_map.h \
+ /usr/include/c++/10.2.0/bits/erase_if.h \
+ /usr/include/c++/10.2.0/pstl/execution_defs.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/SimpleImage.h \
  /usr/include/c++/10.2.0/memory \
  /usr/include/c++/10.2.0/bits/stl_raw_storage_iter.h \
@@ -271,15 +297,14 @@ CMakeFiles/SDL2_App.dir/src/MyDemoTileManager.cpp.o: \
  /usr/include/c++/10.2.0/bits/shared_ptr.h \
  /usr/include/c++/10.2.0/bits/shared_ptr_base.h \
  /usr/include/c++/10.2.0/bits/allocated_ptr.h \
- /usr/include/c++/10.2.0/ext/aligned_buffer.h \
  /usr/include/c++/10.2.0/bits/shared_ptr_atomic.h \
  /usr/include/c++/10.2.0/bits/atomic_base.h \
  /usr/include/c++/10.2.0/bits/atomic_lockfree_defines.h \
  /usr/include/c++/10.2.0/backward/auto_ptr.h \
+ /usr/include/c++/10.2.0/pstl/glue_memory_defs.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/RawImageData.h \
  /usr/include/c++/10.2.0/map /usr/include/c++/10.2.0/bits/stl_tree.h \
  /usr/include/c++/10.2.0/bits/stl_map.h \
  /usr/include/c++/10.2.0/bits/stl_multimap.h \
- /usr/include/c++/10.2.0/bits/erase_if.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/ImageManager.h \
  /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/MyDemoTileManager.hpp

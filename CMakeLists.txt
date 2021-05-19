@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 2.8)
 project(G52CPP)
 
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_CXX_FLAGS_DEBUG_INIT "-g -Wall -Wextra")
-add_definitions(-std=c++11)
+add_definitions(-std=c++17)
 
 # includes cmake/FindSDL2.cmake
 set(CMAKE_MODULE_PATH ${G52CPP_SOURCE_DIR}/cmake)
@@ -45,6 +45,12 @@ src/Part2/WorldGen.cpp
 src/Part2/Player.cpp
 src/Part2/Entity.cpp
 src/Part2/Inventory.cpp
+src/Part2/GameState.cpp
+src/Part2/StateIngame.cpp
+src/Part2/StateMainmenu.cpp
+src/Part2/Form.cpp
+src/Part2/ExtraDrawing.cpp
+src/Part2/Slime.cpp
 )
 
 add_executable(SDL2_App ${SOURCE_FILES})

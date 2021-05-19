@@ -1,7 +1,7 @@
 #include "header.h"
 
 #include <ctime>
-
+#include <filesystem>
 
 // Needs one of the following #includes, to include the class definition
 #include "SimpleDemo.h"
@@ -15,6 +15,7 @@
 #include "DraggingDemo.h"
 #include "MyDemoA.h"
 #include "Part2/MiningGame.hpp"
+#include "Part2/Settings.hpp"
 
 // These are passed to initialise to determine the window size
 const int BaseScreenWidth = 1280;
@@ -25,6 +26,7 @@ const int BaseScreenHeight = 800;
 // Main calls this then checks for errors before ending.
 int doProgram(int argc, char *argv[])
 { 
+	std::filesystem::create_directory("worlds");
 	int iResult = 0;
 
 	// Uncomment only ONE of the following lines - to choose which object to create - ENSURE ONLY ONE IS CREATED.
@@ -45,7 +47,7 @@ int doProgram(int argc, char *argv[])
 	char buf[1024];
 	// Screen caption can be set on following line...
 	sprintf(buf, "C++ Coursework Framework Program : Size %d x %d", BaseScreenWidth, BaseScreenHeight);
-	iResult = oMainDemoObject.initialise(buf, BaseScreenWidth, BaseScreenHeight, "Minecraftia-Regular.ttf", 5);
+	iResult = oMainDemoObject.initialise(buf, BaseScreenWidth, BaseScreenHeight, UI_FONT, 15);
 
 	iResult = oMainDemoObject.mainLoop();
 	oMainDemoObject.deinitialise();

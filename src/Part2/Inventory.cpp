@@ -1,20 +1,12 @@
 #include "../header.h"
 
+#include "GlobalState.hpp"
 #include "Inventory.hpp"
 #include "MiningGame.hpp"
 #include "SDL_keycode.h"
+#include <fstream>
 #include <string>
-
-Item::Item(std::string icnpath, int icon_number, bool canHit, bool canPlace,
-        bool breaksWood, bool breaksStone, bool breaksDirt, int goodBlockEfficiency, int badBlockEfficiency, 
-        int placesBlockId, int hitDmg, int stack_size) 
-:   icon(ImageManager::loadImage(icnpath, true)), icon_startx(icon_number*8), stack_size(stack_size), canHit(canPlace), 
-    hitDmg(hitDmg), canPlace(canPlace), placesBlockId(placesBlockId), breaksWood(breaksWood), breaksStone(breaksStone),
-    breaksDirt(breaksDirt), goodBlockEfficiency(goodBlockEfficiency), badBlockEfficiency(badBlockEfficiency)
-{
-    icon.setTransparencyColour(0x000000);
-    amount = 0;
-}
+#include <filesystem>
 
 Inventory::Inventory(BaseEngine *eng) :
     DisplayableObject(eng) {
@@ -28,7 +20,7 @@ Inventory::Inventory(BaseEngine *eng) :
 }
 
 void Inventory::virtDraw() {
-    if (getEngine()->isKeyPressed(SDLK_TAB)) {
+    if (!getEngine()->isKeyPressed(SDLK_z) && getEngine()->isKeyPressed(SDLK_TAB)) {
         int startx = - ((MiningGameEngine*)getEngine())->getTranslateX();
         int starty = - ((MiningGameEngine*)getEngine())->getTranslateY();
         if (startx < 0) startx = 0;
@@ -114,4 +106,17 @@ void Inventory::drawNumber(int n, int x, int y) {
         n /= 10;
         i++;
     } while (n);
+}
+
+void Inventory::loadFromFile() {
+    std::ifstream invfile(worldFolder/"inventory", std::ios::in | std::ios::binary);
+    invfile.read((char*)items, sizeof(struct inventory_cell_t) * INVENTORY_SLOTS);
+    invfile.close();
+}
+
+void Inventory::saveToFile() {
+    std::filesystem::create_directories(worldFolder);
+    std::ofstream invfile(worldFolder/"inventory", std::ios::out | std::ios::binary);
+    invfile.write((char*)items, sizeof(struct inventory_cell_t) * INVENTORY_SLOTS);
+    invfile.close();
 }

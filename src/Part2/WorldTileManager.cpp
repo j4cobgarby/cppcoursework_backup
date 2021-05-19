@@ -6,6 +6,7 @@
 #include <cstring>
 #include <fstream>
 #include <ios>
+#include <filesystem>
 
 WorldTileManager::WorldTileManager(std::string tilesheet_path) :
         TileManager(8, 8) {
@@ -80,7 +81,7 @@ void WorldTileManager::setData(int *dat) {
     memcpy(m_pData, dat, WORLD_TILES_X * WORLD_TILES_Y * sizeof(int));
 }
 
-void WorldTilesObject::saveToFile(std::string filepath) {
+bool WorldTilesObject::saveToFile(std::string filepath) {
     std::ofstream of;
     of.open(filepath, std::ios::out | std::ios::binary);
     
@@ -89,9 +90,13 @@ void WorldTilesObject::saveToFile(std::string filepath) {
     of.write(tiles_front.serialise(), WORLD_TILES_X * WORLD_TILES_Y * (sizeof(int)/sizeof(char)));
 
     of.close();
+
+    return true;
 }
 
-void WorldTilesObject::loadFromFile(std::string filepath) {
+bool WorldTilesObject::loadFromFile(std::string filepath) {
+    if (!std::filesystem::exists(filepath)) return false;
+
     std::ifstream f;
     f.open(filepath, std::ios::in | std::ios::binary);
 
@@ -104,4 +109,6 @@ void WorldTilesObject::loadFromFile(std::string filepath) {
     tiles_front.setData((int*)tmp);
 
     f.close();
+
+    return true;
 }

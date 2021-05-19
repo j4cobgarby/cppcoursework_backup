@@ -11,17 +11,27 @@
 
 #define PLAYER_WALK_SPEED 0.06
 
+#define HEALTHBAR_LENGTH 28
+#define HEALTHBAR_HEIGHT 3
+#define HEALTHBAR_OVERLAY_LENGTH 32
+#define HEALTHBAR_OVERLAY_HEIGHT 8
+
 class Player : public Entity, public EventHandler {
 private:
     int hp;
+    int maxhp;
     int xp;
 
     bool facing_right;
-    bool on_ground;
+    bool editing_front;
 
     FilterPointsTranslation *translation;
 
     Inventory *inventory;
+
+    SimpleImage healthbarimg;
+
+    void drawHealthBar();
 public:
     Player(BaseEngine *eng, WorldTileManager *front, WorldTileManager *back, 
         FilterPointsTranslation *translation, float x, float y);
@@ -39,6 +49,11 @@ public:
     void jump();
 
     void assignInventory(Inventory *inv) {inventory = inv;}
+
+    void changehp(int deltahp);
+
+    bool reachable(int x, int y);
+    bool checkOnGround();
 };
 
 #endif

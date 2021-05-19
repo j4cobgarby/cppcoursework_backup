@@ -537,6 +537,78 @@ src/Part2/Entity.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Entity.cpp.s
 .PHONY : src/Part2/Entity.cpp.s
 
+src/Part2/ExtraDrawing.o: src/Part2/ExtraDrawing.cpp.o
+.PHONY : src/Part2/ExtraDrawing.o
+
+# target to build an object file
+src/Part2/ExtraDrawing.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o
+.PHONY : src/Part2/ExtraDrawing.cpp.o
+
+src/Part2/ExtraDrawing.i: src/Part2/ExtraDrawing.cpp.i
+.PHONY : src/Part2/ExtraDrawing.i
+
+# target to preprocess a source file
+src/Part2/ExtraDrawing.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.i
+.PHONY : src/Part2/ExtraDrawing.cpp.i
+
+src/Part2/ExtraDrawing.s: src/Part2/ExtraDrawing.cpp.s
+.PHONY : src/Part2/ExtraDrawing.s
+
+# target to generate assembly for a file
+src/Part2/ExtraDrawing.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.s
+.PHONY : src/Part2/ExtraDrawing.cpp.s
+
+src/Part2/Form.o: src/Part2/Form.cpp.o
+.PHONY : src/Part2/Form.o
+
+# target to build an object file
+src/Part2/Form.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o
+.PHONY : src/Part2/Form.cpp.o
+
+src/Part2/Form.i: src/Part2/Form.cpp.i
+.PHONY : src/Part2/Form.i
+
+# target to preprocess a source file
+src/Part2/Form.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.i
+.PHONY : src/Part2/Form.cpp.i
+
+src/Part2/Form.s: src/Part2/Form.cpp.s
+.PHONY : src/Part2/Form.s
+
+# target to generate assembly for a file
+src/Part2/Form.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.s
+.PHONY : src/Part2/Form.cpp.s
+
+src/Part2/GameState.o: src/Part2/GameState.cpp.o
+.PHONY : src/Part2/GameState.o
+
+# target to build an object file
+src/Part2/GameState.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o
+.PHONY : src/Part2/GameState.cpp.o
+
+src/Part2/GameState.i: src/Part2/GameState.cpp.i
+.PHONY : src/Part2/GameState.i
+
+# target to preprocess a source file
+src/Part2/GameState.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.i
+.PHONY : src/Part2/GameState.cpp.i
+
+src/Part2/GameState.s: src/Part2/GameState.cpp.s
+.PHONY : src/Part2/GameState.s
+
+# target to generate assembly for a file
+src/Part2/GameState.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.s
+.PHONY : src/Part2/GameState.cpp.s
+
 src/Part2/Inventory.o: src/Part2/Inventory.cpp.o
 .PHONY : src/Part2/Inventory.o
 
@@ -608,6 +680,78 @@ src/Part2/Player.s: src/Part2/Player.cpp.s
 src/Part2/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.s
 .PHONY : src/Part2/Player.cpp.s
+
+src/Part2/Slime.o: src/Part2/Slime.cpp.o
+.PHONY : src/Part2/Slime.o
+
+# target to build an object file
+src/Part2/Slime.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o
+.PHONY : src/Part2/Slime.cpp.o
+
+src/Part2/Slime.i: src/Part2/Slime.cpp.i
+.PHONY : src/Part2/Slime.i
+
+# target to preprocess a source file
+src/Part2/Slime.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.i
+.PHONY : src/Part2/Slime.cpp.i
+
+src/Part2/Slime.s: src/Part2/Slime.cpp.s
+.PHONY : src/Part2/Slime.s
+
+# target to generate assembly for a file
+src/Part2/Slime.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.s
+.PHONY : src/Part2/Slime.cpp.s
+
+src/Part2/StateIngame.o: src/Part2/StateIngame.cpp.o
+.PHONY : src/Part2/StateIngame.o
+
+# target to build an object file
+src/Part2/StateIngame.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o
+.PHONY : src/Part2/StateIngame.cpp.o
+
+src/Part2/StateIngame.i: src/Part2/StateIngame.cpp.i
+.PHONY : src/Part2/StateIngame.i
+
+# target to preprocess a source file
+src/Part2/StateIngame.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.i
+.PHONY : src/Part2/StateIngame.cpp.i
+
+src/Part2/StateIngame.s: src/Part2/StateIngame.cpp.s
+.PHONY : src/Part2/StateIngame.s
+
+# target to generate assembly for a file
+src/Part2/StateIngame.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.s
+.PHONY : src/Part2/StateIngame.cpp.s
+
+src/Part2/StateMainmenu.o: src/Part2/StateMainmenu.cpp.o
+.PHONY : src/Part2/StateMainmenu.o
+
+# target to build an object file
+src/Part2/StateMainmenu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o
+.PHONY : src/Part2/StateMainmenu.cpp.o
+
+src/Part2/StateMainmenu.i: src/Part2/StateMainmenu.cpp.i
+.PHONY : src/Part2/StateMainmenu.i
+
+# target to preprocess a source file
+src/Part2/StateMainmenu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.i
+.PHONY : src/Part2/StateMainmenu.cpp.i
+
+src/Part2/StateMainmenu.s: src/Part2/StateMainmenu.cpp.s
+.PHONY : src/Part2/StateMainmenu.s
+
+# target to generate assembly for a file
+src/Part2/StateMainmenu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL2_App.dir/build.make CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.s
+.PHONY : src/Part2/StateMainmenu.cpp.s
 
 src/Part2/WorldGen.o: src/Part2/WorldGen.cpp.o
 .PHONY : src/Part2/WorldGen.o
@@ -885,6 +1029,15 @@ help:
 	@echo "... src/Part2/Entity.o"
 	@echo "... src/Part2/Entity.i"
 	@echo "... src/Part2/Entity.s"
+	@echo "... src/Part2/ExtraDrawing.o"
+	@echo "... src/Part2/ExtraDrawing.i"
+	@echo "... src/Part2/ExtraDrawing.s"
+	@echo "... src/Part2/Form.o"
+	@echo "... src/Part2/Form.i"
+	@echo "... src/Part2/Form.s"
+	@echo "... src/Part2/GameState.o"
+	@echo "... src/Part2/GameState.i"
+	@echo "... src/Part2/GameState.s"
 	@echo "... src/Part2/Inventory.o"
 	@echo "... src/Part2/Inventory.i"
 	@echo "... src/Part2/Inventory.s"
@@ -894,6 +1047,15 @@ help:
 	@echo "... src/Part2/Player.o"
 	@echo "... src/Part2/Player.i"
 	@echo "... src/Part2/Player.s"
+	@echo "... src/Part2/Slime.o"
+	@echo "... src/Part2/Slime.i"
+	@echo "... src/Part2/Slime.s"
+	@echo "... src/Part2/StateIngame.o"
+	@echo "... src/Part2/StateIngame.i"
+	@echo "... src/Part2/StateIngame.s"
+	@echo "... src/Part2/StateMainmenu.o"
+	@echo "... src/Part2/StateMainmenu.i"
+	@echo "... src/Part2/StateMainmenu.s"
 	@echo "... src/Part2/WorldGen.o"
 	@echo "... src/Part2/WorldGen.i"
 	@echo "... src/Part2/WorldGen.s"

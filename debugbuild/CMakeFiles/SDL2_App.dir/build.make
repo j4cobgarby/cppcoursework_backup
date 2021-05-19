@@ -475,6 +475,90 @@ CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Inventory.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.s
 
+CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o: ../src/Part2/GameState.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/GameState.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/GameState.cpp > CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/GameState.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.s
+
+CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o: ../src/Part2/StateIngame.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/StateIngame.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/StateIngame.cpp > CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/StateIngame.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.s
+
+CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o: ../src/Part2/StateMainmenu.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/StateMainmenu.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/StateMainmenu.cpp > CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/StateMainmenu.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.s
+
+CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o: ../src/Part2/Form.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Form.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Form.cpp > CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Form.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.s
+
+CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o: ../src/Part2/ExtraDrawing.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/ExtraDrawing.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/ExtraDrawing.cpp > CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/ExtraDrawing.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.s
+
+CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o: CMakeFiles/SDL2_App.dir/flags.make
+CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o: ../src/Part2/Slime.cpp
+CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o: CMakeFiles/SDL2_App.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o -MF CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o.d -o CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o -c /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Slime.cpp
+
+CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Slime.cpp > CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.i
+
+CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/Part2/Slime.cpp -o CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.s
+
 # Object files for target SDL2_App
 SDL2_App_OBJECTS = \
 "CMakeFiles/SDL2_App.dir/src/mainfunction.cpp.o" \
@@ -505,7 +589,13 @@ SDL2_App_OBJECTS = \
 "CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o" \
 "CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o" \
 "CMakeFiles/SDL2_App.dir/src/Part2/Entity.cpp.o" \
-"CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.o"
+"CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o" \
+"CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o"
 
 # External object files for target SDL2_App
 SDL2_App_EXTERNAL_OBJECTS =
@@ -539,13 +629,19 @@ SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/WorldGen.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/Player.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/Entity.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/Inventory.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/GameState.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/StateIngame.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/StateMainmenu.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/Form.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/ExtraDrawing.cpp.o
+SDL2_App: CMakeFiles/SDL2_App.dir/src/Part2/Slime.cpp.o
 SDL2_App: CMakeFiles/SDL2_App.dir/build.make
 SDL2_App: /usr/lib/libSDL2main.a
 SDL2_App: /usr/lib/libSDL2.so
 SDL2_App: /usr/lib/libSDL2_ttf.so
 SDL2_App: /usr/lib/libSDL2_image.so
 SDL2_App: CMakeFiles/SDL2_App.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable SDL2_App"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable SDL2_App"
 	/usr/bin/cmake -E copy_directory /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/src/resources /home/j4cobgarby/Documents/code/CPP/CPPCoursework2021-v101/debugbuild
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL2_App.dir/link.txt --verbose=$(VERBOSE)
 

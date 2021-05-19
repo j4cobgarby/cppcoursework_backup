@@ -6,40 +6,43 @@
 #include <vector>
 #include "../BaseEngine.h"
 #include "../ExampleFilterPointClasses.h"
+#include "EventHandler.hpp"
 
-class MiningGameEngine : public BaseEngine {
-public:
-	int getTranslateX();
-	int getTranslateY();
-	FilterPointsTranslation *getTranslation();
-
-	void setFilterEnabled(bool enabled);
-
-	void changeState(std::string state_name);
-};
+class MiningGameEngine;
 
 class GameState : public DisplayableObjectContainer {
 protected:
     std::vector<DisplayableObject*> objects;
 	std::string nextState;
-	BaseEngine *eng;
+	MiningGameEngine *eng;
+	std::vector<EventHandler *> event_handlers;
+	float bg_offset_x;
 public:
 	GameState(MiningGameEngine *eng) {
 		nextState = "";
 		this->eng = eng;
 	}
 
-	void onChangeTo() {}
+	virtual void onChangeTo();
 
-	DisplayableObject *getObject(int i) {return objects.at(i);}
-	int getObjectsCount() {return objects.size();}
+	DisplayableObject *getObject(int i);
+	int getObjectsCount();
 
-    virtual void virtMainLoopStartIteration() {}
+    virtual void virtMainLoopStartIteration();
 
-	virtual void virtMainLoopPreUpdate() {}
-	virtual void virtMainLoopDoBeforeUpdate() {}
-	virtual void virtMainLoopDoAfterUpdate() {}
-	virtual void virtMainLoopPostUpdate() {}
+	virtual void virtSetupBackgroundBuffer();
+	virtual void virtMainLoopPreUpdate();
+	virtual void virtMainLoopDoBeforeUpdate();
+	virtual void virtMainLoopDoAfterUpdate();
+	virtual void virtMainLoopPostUpdate();
+
+	virtual void virtKeyDown(int key);
+	virtual void virtMouseDown(int btn, int x, int y);
+
+	float getBackgroundOffset();
+
+	void setNextState(std::string next) {nextState = next;}
+	std::string getNextState() {return nextState;}
 };
 
 #endif
